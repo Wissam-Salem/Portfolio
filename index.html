@@ -38,7 +38,7 @@
       </div>
       <div class="middle">
         <ul>
-          <li><button id="homeBtn">Home</button></li>
+          <li><a href="/" id="homeBtn">Home</a></li>
           <li><button id="aboutBtn">About</button></li>
           <li><button id="projectsBtn">Projects</button></li>
         </ul>
@@ -56,7 +56,7 @@
       </div>
       <div class="dropdown">
         <button
-          class="btn btn-secondary dropdown-toggle"
+          class="btn btn-primary dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -64,9 +64,13 @@
           Menu
         </button>
         <ul class="dropdown-menu">
-          <li><button class="dropdown-item">Home</button></li>
-          <li><button class="dropdown-item" id="aboutBtn">About</button></li>
-          <li><button class="dropdown-item">Projects</button></li>
+          <li><a href="/" class="dropdown-item">Home</a></li>
+          <li id="aboutBtn2">
+            <button class="dropdown-item">About</button>
+          </li>
+          <li id="projectsBtn2">
+            <button class="dropdown-item">Projects</button>
+          </li>
         </ul>
       </div>
     </header>
@@ -77,7 +81,7 @@
           Full-stack <br />
           Developer
         </h1>
-        <h3><button>Contact Me</button></h3>
+        <h3><button id="contactBtn">Contact Me</button></h3>
       </div>
       <div class="second"><img src="./assets/portfolio-pfp.jpg" alt="" /></div>
     </div>
@@ -131,7 +135,7 @@
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
       <div class="projects-head">
         <h1>Projects</h1>
         <hr />
@@ -158,7 +162,7 @@
         </div>
       </div>
     </div>
-    <div class="contact-me">
+    <div class="contact-me" id="contact-me">
       <div class="contact-me-head">
         <span>Contact Me</span>
         <hr />

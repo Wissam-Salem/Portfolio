@@ -31,7 +31,7 @@ body {
     width: fit-content;
 }
 
-.middle button {
+.middle button, a {
     background: none;
     border: none;
     outline: none;
@@ -39,6 +39,15 @@ body {
     font-size: medium;
     cursor: pointer;
     font-weight: 400;
+}
+
+.middle a {
+    text-decoration-line: none;
+    color: #ebeceb;
+}
+
+.middle a:hover {
+   color: #ebeceb;
 }
 
 .middle ul {
@@ -51,6 +60,22 @@ body {
 
 .dropdown {
     display: none;
+}
+
+.dropdown-menu {
+    background: #242424 !important;
+}
+
+.dropdown-menu button, .dropdown-menu a {
+    color: white !important;
+}
+
+.dropdown-menu a:hover {
+    background: #2a2a2a !important;
+}
+
+.dropdown-menu button:hover {
+    background: #2a2a2a !important;
 }
 
 .span1 {
@@ -150,6 +175,7 @@ body {
 .front-end h1, .back-end h1, .db h1 {
     margin-bottom: .5rem;
     font-weight: 400;
+    font-size: xx-large;
 }
 
 .front-end h3, .back-end h3, .db h3 {
@@ -169,6 +195,7 @@ body {
     width: 25px;
     height: 25px;
 }
+
 
 .front-end, .back-end, .db {
     display: flex;
