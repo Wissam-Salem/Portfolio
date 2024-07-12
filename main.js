@@ -31,8 +31,8 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     sendemail();
     setTimeout(() => {
-        window.location.assign("/index.html")
-    }, 1500);
+        window.location.assign("/")
+    }, 2000);
 })
 
 document?.addEventListener("scroll", () => {
