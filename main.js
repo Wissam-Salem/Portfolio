@@ -8,6 +8,29 @@ let projectsBtn2 = document.getElementById("projectsBtn2");
 let projects = document.getElementById("projects");
 let contactBtn = document.getElementById("contactBtn");
 let contact = document.getElementById("contact-me");
+let form = document.getElementById("send-email");
+
+function sendemail() {
+    var templateParams = {
+        user: document.getElementById("email").value,
+        subject: document.getElementById("name").value,
+        message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_qdefosa", "template_zevq9ky", templateParams).then(
+        (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+        },
+        (error) => {
+            console.log("FAILED...", error);
+        }
+    );
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    sendemail();
+})
 
 document?.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
@@ -40,3 +63,4 @@ projectsBtn2.addEventListener("click", () => {
 contactBtn.addEventListener("click", () => {
     contact.scrollIntoView({ behavior: "smooth", block: "start" });
 });
+

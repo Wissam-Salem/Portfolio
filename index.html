@@ -31,6 +31,11 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
+    <script type="text/javascript">
+      (function sendEmail() {
+        emailjs.init("ULyaURc7xSGbGw3zJ");
+      })();
+    </script>
     <title>Portfolio | Wissam</title>
   </head>
   <body>
@@ -187,7 +192,7 @@
             <textarea type="text" id="message"></textarea>
           </div>
           <div>
-            <button onclick="sendEmail()">Send message</button>
+            <button type="submit">Send message</button>
           </div>
         </form>
       </div>
@@ -235,31 +240,6 @@
         </svg>
       </button>
     </div>
-
-    <script type="text/javascript">
-      (function sendEmail() {
-        emailjs.init({
-          publicKey: "ULyaURc7xSGbGw3zJ",
-        });
-      })();
-
-      var templateParams = {
-        to_name: "MrValid",
-        user: document.getElementById("email").value,
-        from_name: document.getElementById("name").value,
-        message: document.getElementById("message").value,
-        reply_to: document.getElementById("email").value,
-      };
-
-      emailjs.send("service_li6e7zs", "template_8raq6rk", templateParams).then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (error) => {
-          console.log("FAILED...", error);
-        }
-      );
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
