@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    height: calc(100vh - 20px);
+    height: fit-content;
     background: #211f20 !important;
 }
 
@@ -369,10 +369,11 @@ footer svg {
 }
 
 .float {
+    width: 100%;
     display: none;
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    justify-content: center;
+    bottom: 1.3rem;
 }
 
 .float button {

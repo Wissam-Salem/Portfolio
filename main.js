@@ -11,7 +11,7 @@ let contact = document.getElementById("contact-me");
 
 document?.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
-        homeBtn.style.display = "block";
+        homeBtn.style.display = "flex";
     } else {
         homeBtn.style.display = "none";
     }
