@@ -369,11 +369,10 @@ footer svg {
 }
 
 .float {
-    width: 100%;
     display: none;
     position: fixed;
-    justify-content: center;
     bottom: 1.3rem;
+    left: 1rem;
 }
 
 .float button {
